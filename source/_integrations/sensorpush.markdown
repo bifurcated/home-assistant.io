@@ -24,4 +24,9 @@ Integrates [SensorPush](https://www.sensorpush.com/) devices into Home Assistant
 
 The SensorPush integration will automatically discover devices once the [Bluetooth](/integrations/bluetooth) integration is enabled and functional.
 
+## App Configuration Required To See Entities
+Sensor entities (temperature, humidity, baromatric pressure) will not be available to Home Assistant until you have configured them from within the SensorPush app on iOS or Android.  
+
+Using the SensorPush app to configure sensors does not require creation of a SensorPush account or the provision of any information.  Communication between the sensor and Home Assistant will be purely local via BLE.
+
 {% include integrations/config_flow.md %}
